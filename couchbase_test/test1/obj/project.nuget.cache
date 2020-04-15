@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "YqZTW00PNbiaKeN4bucDoTiq8Jl4t4C1f1MS4beMlD8tiq9uK5Q7vjWlKH+S7npeC6hleY/nV338JWzSol8BpA==",
+  "success": true,
+  "projectFilePath": "/Users/raymondgao/tmp/couchbase_test/test1/test1.csproj",
+  "expectedPackageFiles": [
+    "/Users/raymondgao/.nuget/packages/couchbasenetclient/3.0.0/couchbasenetclient.3.0.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/dnsclient/1.2.0/dnsclient.1.2.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/microsoft.extensions.logging.abstractions/2.1.1/microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/newtonsoft.json/11.0.2/newtonsoft.json.11.0.2.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/opentracing/0.12.0/opentracing.0.12.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/system.linq.async/4.0.0/system.linq.async.4.0.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/system.runtime.compilerservices.unsafe/4.7.0/system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512",
+    "/Users/raymondgao/.nuget/packages/system.threading.tasks.dataflow/4.11.0/system.threading.tasks.dataflow.4.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

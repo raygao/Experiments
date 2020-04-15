@@ -1,0 +1,62 @@
+﻿@page
+@model BooksApi.ListBooksModel
+
+@{
+    ViewData["Title"] = "ListBooks";
+}
+
+<h1>ListBooks</h1>
+<div class="container">
+    <p>
+        <a asp-page="CreateBook">Create New</a>
+    </p>
+    <form name="myform" asp-page-handler="FindTitle">
+        <label>Search Title</label>
+        <input type="text" asp-for="myTitle" class="form-control col-sm-2" />
+        <input type="submit" class="btn-info" />  
+    </form>
+</div>
+
+
+<table class="table-sm table-responsive-sm table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BookList[0].BookName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookList[0].Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookList[0].Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BookList[0].Author)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BookList) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                <a asp-page="./EditBook" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./DetailBook" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./DeleteBook" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
